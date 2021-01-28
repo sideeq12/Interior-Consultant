@@ -1,0 +1,133 @@
+body{
+    background-color: black;
+    color: white;
+}
+header{
+    display: flex;
+    flex-direction: row;
+}
+
+nav{
+    padding: 10px;
+    border: 1px solid white;
+    width: fit-content;
+    border-radius: 2px;
+    height: fit-content;
+}
+
+.menu {
+    margin-left: auto;
+    display: inline;
+}
+.menu li{
+    display: inline;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+    padding: 10px;
+}
+.menu li:hover{
+    font-weight: bold;
+    border-bottom: 1px solid orangered;
+    color: orangered;
+    cursor: pointer;
+}
+.active{
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+.lower{
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 50px;
+}
+.text p{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.side{
+    display: flex;
+}
+.board{
+    margin-top: 60%;
+    padding: 20px;
+    background-color: black;
+    z-index: 2;
+    border: 1px solid black;
+    position: absolute;
+    margin-bottom: 20px;
+    height: 100px;
+    margin-left: 30%;
+    border-radius: 5px;
+}
+.dash{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;    
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.name span{
+    opacity: 0.5;
+}
+.dash-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.Hamburger{
+    display: none;
+}
+
+
+
+@media (max-width: 1020px){
+    .text p{
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .menu{
+        display: none;
+    }
+    .Hamburger{
+        margin-left: auto;
+        display: block;
+        width: 60px;
+        height: 16px;
+        /* border: 1px solid white; */
+        align-items: center;
+        border-radius: 2px;
+        margin-right: 10%;
+        /* background-color: white; */
+    }
+    .line{
+        height: 5px;
+        background-color: white;
+        border-radius: 2px;
+        margin: 4px;
+    }
+    .line2{
+        width: 40px;
+        margin-left: auto;
+    }
+    .Hamburger.active{
+
+    }
+    .menu.active{
+        z-index: 2;
+        display: block;
+    }
+    .menu li{
+        display: block;
+        margin: 20px;
+        transition: .5s;
+        border: none;
+    }
+    .menu li.active{
+        border: none
+    }
+    
+}
